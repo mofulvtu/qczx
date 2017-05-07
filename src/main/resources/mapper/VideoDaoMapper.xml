@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="cn.lzg.qczx.dao.VideoDao">
+   
+     <select id="queryById" resultType="Video" >
+          SELECT 
+            id,
+            title,
+            source,
+            video_img,
+            duration,
+            video_url,
+            publish_time 
+          from 
+            qctt_video
+          where
+              id = #{id}
+    </select>
+    
+    <select id="queryAll" resultType="Video" >
+          SELECT 
+            id,
+            title,
+            source,
+            video_img,
+            duration,
+            video_url,
+            publish_time 
+          from 
+            qctt_video
+          order by 
+            publish_time desc
+          limit #{offset},#{limit}
+    </select>
+    
+
+</mapper>
