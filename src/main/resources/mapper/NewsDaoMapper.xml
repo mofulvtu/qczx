@@ -15,7 +15,7 @@
               publish_time,
               source 
           from
-              qctt_news_grab 
+              qctt_news_grab_sync
           where
               id = #{id}
     </select>
@@ -30,7 +30,9 @@
               publish_time,
               source 
           from
-              qctt_news_grab 
+              qctt_news_grab_sync
+          WHERE
+              channel_name LIKE  '%新车'
           order by 
               publish_time desc
           limit #{offset},#{limit}

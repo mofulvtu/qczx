@@ -76,7 +76,7 @@
 				<li><a href="http://www.865171.cn">导购</a></li>
 				<li><a href="<%=basePath%>video/list" class="active">视频</a></li>
 				<li><a href="http://www.865171.cn">选车</a></li>
-				<li><a href="http://www.865171.cn">论坛</a></li>
+				<li><a href="http://localhost:8080">论坛</a></li>
 			</ul>
 		</div>
 
@@ -87,7 +87,7 @@
 					<!-- <div class="post"> -->
 					<div class="article clearfix">
 						<div class="img" style="left: 60px;">
-							<a href="${video.videoUrl}"> <img src="${video.videoImg}"
+							<a href="${pageContext.request.contextPath}/video/detail/${video.id}"> <img src="${video.videoImg}"
 								style="width: 200px; height: 112px;" alt="">
 							</a>
 							<p class="time">

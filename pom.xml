@@ -13,11 +13,11 @@
   </properties>
 
 	<dependencies>
-	    <!-- <dependency>
+	     <!--<dependency>
 	        <groupId>com.honey</groupId>
 	        <artifactId>honey</artifactId>
 	        <version>0.0.1-SNAPSHOT</version>
-	    </dependency> -->
+	    </dependency>-->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
