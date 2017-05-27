@@ -1,7 +1,7 @@
 package cn.lzg.qczx.web;
 
-import java.util.List;
-
+import cn.lzg.qczx.entity.News;
+import cn.lzg.qczx.service.NewsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import cn.lzg.qczx.entity.News;
-import cn.lzg.qczx.service.NewsService;
+import java.util.List;
 
 /**
  * <p>Title:NewsController</p>
@@ -31,11 +30,25 @@ public class NewsController {
 	@Autowired
 	private NewsService newsService;
 
-	@RequestMapping(value = "/list", method = RequestMethod.GET)
-	public String list(Model model) {
-		List<News> list = newsService.getList();
-		model.addAttribute("newsList", list);
-		return "list";
+	@RequestMapping(value = "/list/{tag}", method = RequestMethod.GET)
+	public String list(@PathVariable("tag") int tag,Model model) {
+		String channelName = "";
+		if(tag==1){
+			channelName = "%促销";
+			List<News> list = newsService.getList(channelName);
+			model.addAttribute("newsList", list);
+			return "list";
+		}else if(tag==2){
+			channelName = "%新车";
+			List<News> list = newsService.getList(channelName);
+			model.addAttribute("newsList", list);
+			return "carList";
+		}else{
+			channelName = "%促销";
+			List<News> list = newsService.getList(channelName);
+			model.addAttribute("newsList", list);
+			return "saleList";
+		}
 	}
 
 	@RequestMapping(value = "/detail/{newsId}", method = RequestMethod.GET)

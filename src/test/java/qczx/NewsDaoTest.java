@@ -10,12 +10,15 @@ import cn.lzg.qczx.entity.News;
 
 public class NewsDaoTest extends BaseTest {
 
+	/**
+	 *
+	 */
 	@Autowired
 	private NewsDao newsDao;
 
 	@Test
 	public void testqueryAll() {
-		List<News> newsList = newsDao.queryAll(0, 4);
+		List<News> newsList = newsDao.queryAll("%新车",0, 4);
 		for (News news : newsList) {
 			System.out.println(news);
 		}

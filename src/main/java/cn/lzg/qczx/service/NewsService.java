@@ -1,8 +1,8 @@
 package cn.lzg.qczx.service;
 
-import java.util.List;
-
 import cn.lzg.qczx.entity.News;
+
+import java.util.List;
 
 /**
  * <p>Title:NewsService</p>
@@ -18,12 +18,22 @@ public interface NewsService {
 	 * @param newsId
 	 * @return News
 	 */
-	public News getById(long newsId);
+	 News getById(long newsId);
 
 	/**
 	 * 查询所有资讯
 	 * @return List<News>
 	 */
-	public List<News> getList();
+	 List<News> getList(String channelName);
+
+	/**
+	 * 通过关键字搜索
+	 * @param keyWords
+	 * @return
+	 */
+	List<News> queryByKeyWords(String keyWords);
+
+
+
 
 }

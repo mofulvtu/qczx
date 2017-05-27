@@ -9,13 +9,16 @@
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>汽车资讯 - 最新的汽车信息平台</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link rel="stylesheet" type="text/css"
 	href="<%=basePath%>css/default.css" />
+<link rel="stylesheet" type="text/css"
+	href="<%=basePath%>css/detail.css" />
 	<style type="text/css">
 		<!-- BODY {
 			PADDING-BOTTOM: 0px;
@@ -358,15 +361,11 @@
 		}
 	</style>
 </head>
-<script type="text/javascript"
-	src="<%=basePath%>js/jquery-1.8.2.min.js"></script>
 
 <body>
-
 	<div id="upbg"></div>
 
 	<div id="outer">
-
 
 		<div id="header">
 			<div id="headercontent">
@@ -377,7 +376,6 @@
 			</div>
 		</div>
 
-
 		<form method="get" action="<%=basePath%>search/news">
 			<div id="search">
 				<input type="text" class="text" maxlength="64" name="keywords" /> <input
@@ -385,82 +383,50 @@
 			</div>
 		</form>
 
-
 		<%--<div id="headerpic"></div>--%>
-
 
 		<div id="menu">
 			<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
 			<ul>
 				<li><a href="<%=basePath%>news/list/1">首页</a></li>
 				<li><a href="<%=basePath%>news/list/2">新车</a></li>
-				<li><a href="<%=basePath%>news/list/3">导购</a></li>
-				<li><a href="<%=basePath%>video/list" class="active">视频</a></li>
-				<li><a href="<%=basePath%>cars/list/2">选车</a></li>
+				<li><a href="<%=basePath%>news/list/3" class="active">导购</a></li>
+				<li><a href="<%=basePath %>video/list">视频</a></li>
+				<li><a href="http://www.865171.cn">选车</a></li>
 				<li><a href="http://localhost:8080">论坛</a></li>
 			</ul>
 		</div>
 		<div id="menubottom"></div>
 
-
 		<div id="content">
 
-
-			<!-- Primary content: Stuff that goes in the primary content column (by default, the left column) -->
 			<div id="primarycontainer">
 				<div id="primarycontent">
-					<embed pluginspage="http://www.macromedia.com/go/getflashplayer"
-						menu="true" loop="true" play="true"
-						type="application/x-shockwave-flash" width="90%" height="400px"
-						src="http://player.youku.com/player.php/sid/XMjI0MDIwNDc2/v.swf"></embed>
-					<c:forEach var="news" items="${newsList}">
-
-						<div class="post">
-							<a
-								href="${pageContext.request.contextPath}/news/detail/${news.id}">
-								<h3>${news.title}</h3>
-							</a>
-							<div class="contentarea">
-								<div class="details">
-									Posted by <a href="#">${news.authorName}</a> on
-									${news.publishTime}
-								</div>
-								<img src="${news.imageUrl}" class="left" alt="A chinese dragon"
-									style="width: 30%; height: 30%" />
-								<div id="centent" onclick="javascript:myfun();">${news.centent}</div>
-								<ul class="controls">
-									<li><a href="http://www.865171.cn" class="printerfriendly">Printer
-											Friendly</a></li>
-									<li><a href="http://www.865171.cn" class="comments">Comments
-											(18)</a></li>
-									<li><a href="http://www.865171.cn" class="more">Read
-											More</a></li>
-								</ul>
-							</div>
+					<!-- Primary content area start -->
+					<div class="content_detail_left">
+						<div class="title">${news.title}</div>
+						<div class="part2">
+							<a href="#" target="_blank">${news.authorName}</a>
+							<span class="p_mid">汽车资讯</span> <span><fmt:formatDate
+									value="${news.publishTime}" pattern="yyyy-MM-dd HH:mm:ss" /></span> <span
+								style="float: right; margin-right: 20px">阅读数 <span
+								style="color: #17abc1">${news.readNum}</span></span>
 						</div>
-						<div class="divider2"></div>
-					</c:forEach>
-					<!-- Primary content area end -->
+						<div>${news.centent}</div>
+						<div class="more">
+							<div class="more_btn" style="display: none">点击加载更多</div>
+						</div>
+					</div>
+					<div class="divider2"></div>
 				</div>
 			</div>
 
-
-			<!-- Secondary content: Stuff that goes in the secondary content column (by default, the narrower right column) -->
 			<div id="secondarycontent">
-				<!-- Secondary content area start -->
-
-				<!-- HINT: Set any div's class to "box" to encapsulate it in (you guessed it) a box -->
 				<div class="box">
-					<h4>Blandit Veroeros</h4>
+					<h4>买车前需要了解哪些知识？</h4>
 					<div class="contentarea">
-						<img src="<%=basePath%>images/pic2.jpg" class="left"
-							alt="Random foliage" />
-						<p>
-							Sed etiam et lorem ipsum nulla vero et lobortis felis sed etiam.
-							Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean
-							felis. Quisque eros etiam <a href="http://www.865171.cn">sed
-								commodo</a>.
-						</p>
+						<img src="<%=basePath %>images/timg1.jpg" class="left" style="width: 30px;height: 30px" />
+						<p><a href="https://www.zhihu.com/question/28587624">对汽车行业不是很了解，买车前需要注意或者知道哪些知识呢？</a></p>
 					</div>
 				</div>
 
@@ -484,7 +450,6 @@
 				<!-- Secondary content area end -->
 			</div>
 
-
 		</div>
 
 		<div id="footer">
@@ -496,6 +461,6 @@
 		</div>
 
 	</div>
-
 </body>
+
 </html>

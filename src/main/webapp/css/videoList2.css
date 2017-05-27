@@ -9,13 +9,13 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
 body{
 	width:100%;
 }
-body, button, input, select, textarea {
-	font-family:"Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti",  SimSun, sans-serif;
-	font-size: 16px;
-	line-height: 1.6;
-	background-color: #fff;
-	color: #333;
-}
+/*body, button, input, select, textarea {*/
+	/*font-family:"Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti",  SimSun, sans-serif;*/
+	/*font-size: 16px;*/
+	/*line-height: 1.6;*/
+	/*background-color: #fff;*/
+	/*color: #333;*/
+/*}*/
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
 }
@@ -153,7 +153,7 @@ color: #a6b2be;
 	float: left;
 	width:112px;
 	height: 32px;
-	background:url("../img/qctt_logo.png")no-repeat top left/100%;
+	/*background:url("../img/qctt_logo.png")no-repeat top left/100%;*/
 }
 
 .fl{
@@ -188,13 +188,13 @@ color: #a6b2be;
 	height: 25px;
 	top: 16px;
 	right: 0px;
-	background: url("../img/search2.png")no-repeat;
+	/*background: url("../img/search2.png")no-repeat;*/
 }
 
 
 .search{ padding:0 10px; float:left; width:180px;  margin-top:10px; border:1px solid #ddd; background-color:#f9f9f9; border-radius:10px;}
 .search input:first-child{ width:130px; height:26px;background-color:#f9f9f9; border:none; float:left; font-size:14px;}
-.search input:last-child{ width:26px; height:26px;background-color:#f9f9f9; border:none; float:right; background-image:url(../img/search2.png); background-repeat:no-repeat; background-position:center center; background-size:16px 16px; cursor:pointer}
+/*.search input:last-child{ width:26px; height:26px;background-color:#f9f9f9; border:none; float:right; background-image:url(../img/search2.png); background-repeat:no-repeat; background-position:center center; background-size:16px 16px; cursor:pointer}*/
 
 
 .gao{
@@ -272,7 +272,7 @@ color: #a6b2be;
 	display: none;
 	width:178px;
 	height:182px;
-	background: url("../img/huaguo.png")no-repeat center center/100% 100%;
+	/*background: url("../img/huaguo.png")no-repeat center center/100% 100%;*/
 	z-index:9999999;
 }
 .client:hover .erweima{
@@ -313,7 +313,7 @@ color: #a6b2be;
 	right: 90px;
 	width:55px;
 	height:55px;
-	background: url("../img/回到顶部.png")no-repeat center center/100% 100%;
+	/*background: url("../img/回到顶部.png")no-repeat center center/100% 100%;*/
 }
 .more{
 	height:65px;
@@ -341,7 +341,7 @@ color: #a6b2be;
 	right: 90px;
 	width:55px;
 	height:55px;
-	background: url("../img/回到顶部.png")no-repeat center center/100% 100%;
+	/*background: url("../img/回到顶部.png")no-repeat center center/100% 100%;*/
 }
 .back:hover{
 	display: none;
@@ -350,7 +350,7 @@ color: #a6b2be;
 	right: 90px;
 	width:55px;
 	height:55px;
-	background: url("../img/backtop2.jpg")no-repeat center center/100% 100%;
+	/*background: url("../img/backtop2.jpg")no-repeat center center/100% 100%;*/
 	}
 /*登陆弹窗*/
 .log_box{
@@ -519,20 +519,20 @@ color: #a6b2be;
 	position: absolute;
 	right: 10px;
 	top: 11px;
-	background-image: url(../images/12.jpg);
+	/*background-image: url(../images/12.jpg);*/
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 14px 18px;
 }
 .show_gray {
-    background: url(../img/zanhui.png) no-repeat;
+    /*background: url(../img/zanhui.png) no-repeat;*/
     margin: 10px 5px 0 0;
     width: 18px;
     height: 18px;
 
 }
 .show_gray:hover {
-    background: url(../img/zanhuihover.png) no-repeat;
+    /*background: url(../img/zanhuihover.png) no-repeat;*/
     margin: 10px 5px 0 0;
     width: 18px;
     height: 18px;
@@ -541,7 +541,7 @@ color: #a6b2be;
     margin-right: 20px;
 }
 .show_active {
-    background: url(../img/zanlv.png) no-repeat;
+    /*background: url(../img/zanlv.png) no-repeat;*/
     margin: 10px 5px 0 0;
     width: 18px;
     height: 18px;

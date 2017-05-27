@@ -1,10 +1,9 @@
 package cn.lzg.qczx.dao;
 
-import java.util.List;
-
+import cn.lzg.qczx.entity.News;
 import org.apache.ibatis.annotations.Param;
 
-import cn.lzg.qczx.entity.News;
+import java.util.List;
 
 /**
  * <p>Title:NewDao</p>
@@ -28,6 +27,14 @@ public interface NewsDao {
 	 * @param limit 查询条数
 	 * @return List<News>
 	 */
-	List<News> queryAll(@Param("offset") int offset, @Param("limit") int limit);
+	List<News> queryAll(@Param("channelName")String channelName,@Param("offset") int offset, @Param("limit") int limit);
+
+
+	/**
+	 * 通过关键字搜索
+	 * @param keyWords
+	 * @return
+     */
+	List<News> queryByKeyWords(String keyWords);
 
 }

@@ -13,11 +13,17 @@
   </properties>
 
 	<dependencies>
-	     <!--<dependency>
-	        <groupId>com.honey</groupId>
-	        <artifactId>honey</artifactId>
-	        <version>0.0.1-SNAPSHOT</version>
-	    </dependency>-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.1.15</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -128,7 +134,12 @@
             <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
         </dependency>
-  </dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.1.41</version>
+        </dependency>
+    </dependencies>
   <build>
     <finalName>qczx</finalName>
   </build>

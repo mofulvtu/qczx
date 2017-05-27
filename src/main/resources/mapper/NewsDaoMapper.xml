@@ -32,10 +32,25 @@
           from
               qctt_news_grab_sync
           WHERE
-              channel_name LIKE  '%新车'
+              channel_name LIKE  #{channelName}
           order by 
               publish_time desc
           limit #{offset},#{limit}
+    </select>
+
+    <select id="queryByKeyWords" resultType="News" >
+        select
+        id,
+        title,
+        author_name,
+        centent,
+        image_url,
+        publish_time,
+        source
+        from
+        qctt_news_grab_sync
+        WHERE
+        title LIKE  #{keyWords}
     </select>
     
    
