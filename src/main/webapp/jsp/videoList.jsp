@@ -367,7 +367,7 @@
         }
     </style>
 </head>
-<script type="text/javascript" src="<%=basePath%>js/jquery-1.8.2.min.js"></script>
+
 <body>
 <div id="upbg"></div>
 <div id="outer">
@@ -398,6 +398,9 @@
 
     <div id="primarycontainer" style="background: white;">
         <div id="primarycontent">
+
+            <div class="back" id="back" style="display: block;"></div>
+
             <p style="font-size: x-large; color: blue; padding-left: 20px;">推荐视频</p>
             <c:forEach var="video" items="${videoList}">
                 <!-- <div class="post"> -->
@@ -464,6 +467,7 @@
 </div>
 
 </div>
-
+<script type="text/javascript" src="<%=basePath%>js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/scrollTop.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css"
           href="<%=basePath%>css/detail.css"/>
 </head>
-
+<script type="text/javascript" src="<%=basePath%>js/scrollTop.js"></script>
 <body>
 <div id="upbg"></div>
 
@@ -56,6 +56,8 @@
     <div id="menubottom"></div>
 
     <div id="content">
+
+        <div class="back" id="back" style="display: block;"></div>
 
         <div id="primarycontainer">
             <div id="primarycontent">

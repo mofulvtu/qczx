@@ -360,6 +360,7 @@
 </head>
 <script type="text/javascript"
 	src="<%=basePath%>js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/scrollTop.js"></script>
 
 <body>
 
@@ -405,7 +406,7 @@
 
 		<div id="content">
 
-
+			<div class="back" id="back" style="display: block;"></div>
 			<!-- Primary content: Stuff that goes in the primary content column (by default, the left column) -->
 			<div id="primarycontainer">
 				<div id="primarycontent">

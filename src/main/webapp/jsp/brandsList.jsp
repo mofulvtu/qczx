@@ -408,6 +408,7 @@
     </style>
 </head>
 <script type="text/javascript" src="<%=basePath%>js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/scrollTop.js"></script>
 <script type="text/javascript">
     function selectBy(tag) {
         if (tag == 1) {
@@ -444,6 +445,7 @@
             <li><a href="http://localhost:8080">论坛</a></li>
         </ul>
     </div>
+    <div class="back" id="back" style="display: block;"></div>
     <div id="menubottom"></div>
     <div id="change-city">
         <div id="bdw" class="bdw">

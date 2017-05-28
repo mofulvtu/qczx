@@ -28,15 +28,15 @@ public class NewsServiceImpl implements NewsService {
     }
 
     @Override
-    public List<News> getList(String channelName) {
-        return newsDao.queryAll(channelName, 0, 10);
+    public List<News> getList(String crawledStyle) {
+        return newsDao.queryAll(crawledStyle, 0, 10);
     }
 
     @Override
     public List<News> queryByKeyWords(String keyWords) {
         if (keyWords.trim() != "") {
             keyWords = "%" + keyWords + "%";
-            return newsDao.queryByKeyWords(keyWords);
+            return newsDao.queryByKeyWords(keyWords,0,10);
         } else {
             return null;
         }

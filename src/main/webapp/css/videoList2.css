@@ -313,7 +313,7 @@ color: #a6b2be;
 	right: 90px;
 	width:55px;
 	height:55px;
-	/*background: url("../img/回到顶部.png")no-repeat center center/100% 100%;*/
+	background: url("../images/回到顶部.png")no-repeat center center/100% 100%;
 }
 .more{
 	height:65px;
@@ -341,7 +341,7 @@ color: #a6b2be;
 	right: 90px;
 	width:55px;
 	height:55px;
-	/*background: url("../img/回到顶部.png")no-repeat center center/100% 100%;*/
+	background: url("../images/回到顶部.png")no-repeat center center/100% 100%;
 }
 .back:hover{
 	display: none;
@@ -350,7 +350,7 @@ color: #a6b2be;
 	right: 90px;
 	width:55px;
 	height:55px;
-	/*background: url("../img/backtop2.jpg")no-repeat center center/100% 100%;*/
+	background: url("../images/backtop2.jpg")no-repeat center center/100% 100%;
 	}
 /*登陆弹窗*/
 .log_box{

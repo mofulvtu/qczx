@@ -3,7 +3,7 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
     
-<mapper namespace="cn.lzg.qczx.dao.NewsDao">
+<mapper namespace="cn.lzg.qczx.dao.QueryDao">
 
      <select id="queryById" resultType="News" >
           select 
@@ -15,30 +15,13 @@
               publish_time,
               source 
           from
-              qctt_news_grab
+              qctt_news_grab_sync
           where
               id = #{id}
     </select>
     
-    <!--<select id="queryAll" resultType="News" >-->
-          <!--select -->
-              <!--id,-->
-              <!--title,-->
-              <!--author_name,-->
-              <!--centent,-->
-              <!--image_url,-->
-              <!--publish_time,-->
-              <!--source -->
-          <!--from-->
-              <!--qctt_news_grab-->
-          <!--WHERE-->
-              <!--channel_name LIKE  #{channelName}-->
-          <!--order by -->
-              <!--publish_time desc-->
-          <!--limit #{offset},#{limit}-->
-    <!--</select>-->
     <select id="queryAll" resultType="News" >
-        select
+           select
         id,
         title,
         author_name,
@@ -56,7 +39,6 @@
         publish_time desc
         limit #{offset},#{limit}
     </select>
-
 
     <select id="queryByKeyWords" resultType="News" >
         select

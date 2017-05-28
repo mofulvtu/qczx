@@ -19,6 +19,14 @@
           href="<%=basePath%>css/default.css"/>
     <link rel="stylesheet" type="text/css"
           href="<%=basePath%>css/detail.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="<%=basePath%>css/videoList.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="<%=basePath%>css/videoList2.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="<%=basePath%>css/videoList3.css">
 </head>
 
 <body>
@@ -46,8 +54,8 @@
     <div id="menu">
         <ul>
             <li><a href="<%=basePath%>news/list/1" class="active">首页</a></li>
-            <li><a href="<%=basePath%>news/list/2">新车</a></li>
-            <li><a href="<%=basePath%>news/list/3">导购</a></li>
+            <li><a href="<%=basePath%>news/list/2">行情</a></li>
+            <li><a href="<%=basePath%>news/list/3">促销</a></li>
             <li><a href="<%=basePath %>video/list">视频</a></li>
             <li><a href="<%=basePath%>cars/list/1">选车</a></li>
             <li><a href="http://localhost:8080">论坛</a></li>
@@ -56,6 +64,8 @@
     <div id="menubottom"></div>
 
     <div id="content">
+
+        <div class="back" id="back" style="display: block;"></div>
 
         <div id="primarycontainer">
             <div id="primarycontent">
@@ -117,6 +127,10 @@
     </div>
 
 </div>
+
+<script type="text/javascript" src="<%=basePath%>js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/jquery.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/scrollTop.js"></script>
 </body>
 
 </html>

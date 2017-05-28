@@ -24,12 +24,12 @@ public interface NewsService {
 	 * 查询所有资讯
 	 * @return List<News>
 	 */
-	 List<News> getList(String channelName);
+	 List<News> getList(String crawledStyle);
 
 	/**
 	 * 通过关键字搜索
 	 * @param keyWords
-	 * @return
+	 * @return List<News>
 	 */
 	List<News> queryByKeyWords(String keyWords);
 

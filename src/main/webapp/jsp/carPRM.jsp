@@ -80,11 +80,11 @@
     </form>
     <div id="menu">
         <ul>
-            <li><a href="<%=basePath%>news/list/1" class="active">首页</a></li>
+            <li><a href="<%=basePath%>news/list/1" >首页</a></li>
             <li><a href="<%=basePath%>news/list/2">新车</a></li>
             <li><a href="<%=basePath%>news/list/3">导购</a></li>
             <li><a href="<%=basePath%>video/list">视频</a></li>
-            <li><a href="<%=basePath%>cars/list/1">选车</a></li>
+            <li><a href="<%=basePath%>cars/list/1" class="active">选车</a></li>
             <li><a href="http://localhost:8080">论坛</a></li>
         </ul>
     </div>

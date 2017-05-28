@@ -390,6 +390,7 @@
 </style>
 </head>
 <script type="text/javascript" src="<%=basePath%>js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/scrollTop.js"></script>
 <body>
 
 	<div id="upbg"></div>
@@ -427,6 +428,8 @@
 
 
 		<div id="content">
+
+			<div class="back" id="back" style="display: block;"></div>
 
 			<div class="video">
 				<video id="video" src="${video.videoUrl }" controls

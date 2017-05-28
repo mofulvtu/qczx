@@ -6,13 +6,13 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * <p>Title:NewDao</p>
- * <p>Description:New实体对应的接口</p>
+ * <p>Title:QueryDao</p>
+ * <p>Description:查询实体对应的接口</p>
  * @author Liuzeg
- * @date 2017-04-29
+ * @date 2017-04-26
  * @version 1.0
  */
-public interface NewsDao {
+public interface QueryDao {
 
 	/**
 	 * 通过id查询一条资讯
@@ -27,7 +27,7 @@ public interface NewsDao {
 	 * @param limit 查询条数
 	 * @return List<News>
 	 */
-	List<News> queryAll(@Param("crawledStyle")String crawledStyle,@Param("offset") int offset, @Param("limit") int limit);
+	List<News> queryAll(@Param("crawledStyle") String crawledStyle, @Param("offset") int offset, @Param("limit") int limit);
 
 
 	/**
@@ -35,6 +35,6 @@ public interface NewsDao {
 	 * @param keyWords
 	 * @return
      */
-	List<News> queryByKeyWords(@Param("keyWords") String keyWords,@Param("offset") int offset, @Param("limit") int limit);
+	List<News> queryByKeyWords(String keyWords);
 
 }

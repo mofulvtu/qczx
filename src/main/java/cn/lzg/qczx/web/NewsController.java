@@ -32,20 +32,20 @@ public class NewsController {
 
 	@RequestMapping(value = "/list/{tag}", method = RequestMethod.GET)
 	public String list(@PathVariable("tag") int tag,Model model) {
-		String channelName = "";
+		String crawledStyle = "";
 		if(tag==1){
-			channelName = "%促销";
-			List<News> list = newsService.getList(channelName);
+			crawledStyle = "%商情";
+			List<News> list = newsService.getList(crawledStyle);
 			model.addAttribute("newsList", list);
 			return "list";
 		}else if(tag==2){
-			channelName = "%新车";
-			List<News> list = newsService.getList(channelName);
+			crawledStyle = "%行情";
+			List<News> list = newsService.getList(crawledStyle);
 			model.addAttribute("newsList", list);
 			return "carList";
 		}else{
-			channelName = "%促销";
-			List<News> list = newsService.getList(channelName);
+			crawledStyle = "%促销";
+			List<News> list = newsService.getList(crawledStyle);
 			model.addAttribute("newsList", list);
 			return "saleList";
 		}
@@ -66,5 +66,33 @@ public class NewsController {
 		model.addAttribute("news", news);
 		logger.warn("======== NewsController detail end =======");
 		return "detail";
+	}
+
+	@RequestMapping(value = "/newCar/{newsId}", method = RequestMethod.GET)
+	public String newCarDetail(@PathVariable("newsId") Long newsId, Model model) {
+		if (newsId == null) {
+			return "redirect:/news/list";
+		}
+		News news = newsService.getById(newsId);
+		if (news == null) {
+			return "forward:/news/list";
+		}
+		news.setReadNum((long) (Math.random() * 100000));
+		model.addAttribute("news", news);
+		return "carDetail";
+	}
+
+	@RequestMapping(value = "/sale/{newsId}", method = RequestMethod.GET)
+	public String saleDetail(@PathVariable("newsId") Long newsId, Model model) {
+		if (newsId == null) {
+			return "redirect:/news/list";
+		}
+		News news = newsService.getById(newsId);
+		if (news == null) {
+			return "forward:/news/list";
+		}
+		news.setReadNum((long) (Math.random() * 100000));
+		model.addAttribute("news", news);
+		return "saleDetail";
 	}
 }

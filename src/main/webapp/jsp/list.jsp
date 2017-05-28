@@ -122,317 +122,16 @@
             width: 79%;
             /*border: medium solid #0000CC;*/
         }
-    </style>
-    <style type="text/css">
-        <!-- BODY {
-            PADDING-BOTTOM: 0px;
-            MARGIN: 0px;
-            PADDING-LEFT: 0px;
-            PADDING-RIGHT: 0px;
-            PADDING-TOP: 0px
-        }
-
-        DIV {
-            PADDING-BOTTOM: 0px;
-            MARGIN: 0px;
-            PADDING-LEFT: 0px;
-            PADDING-RIGHT: 0px;
-            PADDING-TOP: 0px
-        }
-
-        DL {
-            PADDING-BOTTOM: 0px;
-            MARGIN: 0px;
-            PADDING-LEFT: 0px;
-            PADDING-RIGHT: 0px;
-            PADDING-TOP: 0px
-        }
-
-        DT {
-            PADDING-BOTTOM: 0px;
-            MARGIN: 0px;
-            PADDING-LEFT: 0px;
-            PADDING-RIGHT: 0px;
-            PADDING-TOP: 0px
-        }
-
-        DD {
-            PADDING-BOTTOM: 0px;
-            MARGIN: 0px;
-            PADDING-LEFT: 0px;
-            PADDING-RIGHT: 0px;
-            PADDING-TOP: 0px
-        }
-
-        UL {
-            PADDING-BOTTOM: 0px;
-            MARGIN: 0px;
-            PADDING-LEFT: 0px;
-            PADDING-RIGHT: 0px;
-            PADDING-TOP: 0px
-        }
-
-        OL {
-            PADDING-BOTTOM: 0px;
-            MARGIN: 0px;
-            PADDING-LEFT: 0px;
-            PADDING-RIGHT: 0px;
-            PADDING-TOP: 0px
-        }
-
-        LI {
-            PADDING-BOTTOM: 0px;
-            MARGIN: 0px;
-            PADDING-LEFT: 0px;
-            PADDING-RIGHT: 0px;
-            PADDING-TOP: 0px
-        }
-
-        /*H1 {*/
-        /*PADDING-BOTTOM: 0px;*/
-        /*MARGIN: 0px;*/
-        /*PADDING-LEFT: 0px;*/
-        /*PADDING-RIGHT: 0px;*/
-        /*PADDING-TOP: 0px*/
-        /*}*/
-
-        /*H2 {*/
-        /*PADDING-BOTTOM: 0px;*/
-        /*MARGIN: 0px;*/
-        /*PADDING-LEFT: 0px;*/
-        /*PADDING-RIGHT: 0px;*/
-        /*PADDING-TOP: 0px*/
-        /*}*/
-
-        P {
-            PADDING-BOTTOM: 0px;
-            MARGIN: 0px;
-            PADDING-LEFT: 0px;
-            PADDING-RIGHT: 0px;
-            PADDING-TOP: 0px
-        }
-
-        LI {
-            LIST-STYLE-TYPE: none;
-            LIST-STYLE-IMAGE: none
-        }
-
-        /*H2 {*/
-        /*FONT-SIZE: 100%*/
-        /*}*/
-
-        #change-city {
-            width: 1000px;
-            margin: 50px auto;
-        }
-
-        #change-city .choosecities {
-            BORDER-BOTTOM: #a3d7df 1px solid;
-            BORDER-LEFT: #a3d7df 1px solid;
-            PADDING-BOTTOM: 60px;
-            BACKGROUND: #fff;
-            BORDER-TOP: #a3d7df 1px solid;
-            BORDER-RIGHT: #a3d7df 1px solid;
-            box-shadow: 0 0 1px #d4edf4
-        }
-
-        #change-city .choosecities A:hover {
+        A {
+            COLOR: #399;
             TEXT-DECORATION: none
         }
-
-        #change-city .citieslist H2 {
-            POSITION: relative;
-            PADDING-BOTTOM: 0px;
-            LINE-HEIGHT: 30px;
-            MARGIN: 20px 20px 12px;
-            PADDING-LEFT: 14px;
-            PADDING-RIGHT: 14px;
-            ZOOM: 1;
-            DISPLAY: inline-block;
-            BACKGROUND: #00c7c7;
-            HEIGHT: 32px;
-            COLOR: #fff;
-            PADDING-TOP: 0px;
-            border-radius: 0
-        }
-
-        #change-city .citieslist H2 SPAN {
-            BORDER-BOTTOM: #fff 6px solid;
-            POSITION: absolute;
-            BORDER-LEFT: #fff 6px solid;
-            LINE-HEIGHT: 0;
-            WIDTH: 0px;
-            DISPLAY: block;
-            FLOAT: none;
-            HEIGHT: 0px;
-            FONT-SIZE: 0px;
-            BORDER-TOP: #00c7c7 6px solid;
-            TOP: 32px;
-            BORDER-RIGHT: #fff 6px solid;
-            LEFT: 20px
-        }
-
-        #change-city .citieslist LI {
-            BORDER-BOTTOM: #fff 1px solid;
-            BORDER-TOP: #fff 1px solid
-        }
-
-        #change-city .citieslist P {
-            BORDER-BOTTOM: #fff 1px solid;
-            PADDING-BOTTOM: 6px;
-            PADDING-LEFT: 30px;
-            PADDING-RIGHT: 10px;
-            BORDER-TOP: #fff 1px solid;
-            PADDING-TOP: 6px
-        }
-
-        #change-city .citieslist SPAN.label {
-            BORDER-BOTTOM: #ddd 1px solid;
-            BORDER-LEFT: #ddd 1px solid;
-            LINE-HEIGHT: 24px;
-            WIDTH: 30px;
-            ZOOM: 1;
-            DISPLAY: inline-block;
-            HEIGHT: 30px;
-            COLOR: #666;
-            VERTICAL-ALIGN: top;
-            BORDER-TOP: #ddd 1px solid;
-            MARGIN-RIGHT: 5px;
-            BORDER-RIGHT: #ddd 1px solid;
-            border-radius: 0
-        }
-
-        #change-city .citieslist SPAN.label STRONG {
-            BORDER-BOTTOM: #f7f7f7 1px solid;
-            TEXT-ALIGN: center;
-            BORDER-LEFT: #f7f7f7 1px solid;
-            WIDTH: 28px;
-            DISPLAY: block;
-            FONT-FAMILY: Tahoma;
-            BACKGROUND: #f1f1f1;
-            HEIGHT: 28px;
-            FONT-SIZE: 16px;
-            BORDER-TOP: #f7f7f7 1px solid;
-            BORDER-RIGHT: #f7f7f7 1px solid;
-            border-radius: 0
-        }
-
-        #change-city .citieslist SPAN {
-            WIDTH: 880px;
-            ZOOM: 1;
-            DISPLAY: inline-block;
-            VERTICAL-ALIGN: top
-        }
-
-        #change-city .citieslist SPAN I {
-            FONT-STYLE: normal;
-            MARGIN: 0px 3px;
-            COLOR: #ccc
-        }
-
-        #change-city .citieslist .hover {
-            BORDER-BOTTOM-COLOR: #e5e5e5;
-            BORDER-TOP-COLOR: #e5e5e5;
-            BORDER-RIGHT-COLOR: #e5e5e5;
-            BORDER-LEFT-COLOR: #e5e5e5
-        }
-
-        #change-city .citieslist .hover P {
-            BACKGROUND: #f7f7f7
-        }
-
-        #change-city .citieslist .hover SPAN.label {
-            BORDER-BOTTOM-COLOR: #1fb7bb;
-            BORDER-TOP-COLOR: #1fb7bb;
-            BORDER-RIGHT-COLOR: #1fb7bb;
-            BORDER-LEFT-COLOR: #1fb7bb
-        }
-
-        #change-city .citieslist .hover SPAN.label STRONG {
-            BORDER-BOTTOM-COLOR: #00c7c7;
-            BORDER-TOP-COLOR: #00c7c7;
-            BACKGROUND: #00c7c7;
-            COLOR: #fff;
-            BORDER-RIGHT-COLOR: #00c7c7;
-            BORDER-LEFT-COLOR: #00c7c7
-        }
-
-        #change-city .citieslist A {
-            PADDING-BOTTOM: 1px;
-            LINE-HEIGHT: 20px;
-            MARGIN: 5px 10px;
-            PADDING: 5px 10px;
-            ZOOM: 1;
-            DISPLAY: inline-block;
-            HEIGHT: 20px;
-            border-radius: 0
-        }
-
-        #change-city .citieslist A:hover {
-            BACKGROUND: #00c7c7;
-            COLOR: #fff
-        }
-
-        #change-city .citieslist .isonline {
-            FONT-WEIGHT: bold
-        }
-
-        #change-city .citieslist .isoffline {
-            FONT-WEIGHT: bold
-        }
-
-        #bdw {
-            MIN-HEIGHT: 500px
-        }
-
-        .cf {
-            ZOOM: 1
-        }
-
-        .cf:after {
-            DISPLAY: block;
-            HEIGHT: 0px;
-            VISIBILITY: hidden;
-            CLEAR: both;
-            OVERFLOW: hidden;
-            CONTENT: ''
-        }
-
-        /*H2 {*/
-        /*PADDING-BOTTOM: 0px;*/
-        /*MARGIN: 0px;*/
-        /*PADDING-LEFT: 0px;*/
-        /*PADDING-RIGHT: 0px;*/
-        /*PADDING-TOP: 0px*/
-        /*}*/
-
         BODY {
             FONT: 14px/1.5 Tahoma, Helvetica, arial, sans-serif;
             /*BACKGROUND: #d6e9ec;*/
             COLOR: #000
         }
-
-        A {
-            COLOR: #399;
-            TEXT-DECORATION: none
-        }
-
-        A:hover {
-            TEXT-DECORATION: underline
-        }
-
-        SPAN.money {
-            FONT-FAMILY: arial
-        }
-
-        SPAN.required {
-            COLOR: red
-        }
-
-        -->
     </style>
-
-
     <style type="text/css">
         .footer div {
             padding-top: 30px;
@@ -465,10 +164,7 @@
         }
     </style>
 </head>
-<script type="text/javascript" src="<%=basePath %>js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript">
 
-</script>
 <body>
 <div id="upbg"></div>
 <div id="outer">
@@ -487,8 +183,8 @@
     <div id="menu">
         <ul>
             <li><a href="<%=basePath%>news/list/1" class="active">首页</a></li>
-            <li><a href="<%=basePath%>news/list/2">新车</a></li>
-            <li><a href="<%=basePath%>news/list/3">导购</a></li>
+            <li><a href="<%=basePath%>news/list/2">行情</a></li>
+            <li><a href="<%=basePath%>news/list/3">促销</a></li>
             <li><a href="<%=basePath%>video/list">视频</a></li>
             <li><a href="<%=basePath%>cars/list/1">选车</a></li>
             <li><a href="http://localhost:8080">论坛</a></li>
@@ -497,6 +193,8 @@
 
     <div id="menubottom"></div>
     <div id="content">
+
+        <div class="back" id="back" style="display: block;"></div>
 
         <div id="main">
             <div id="left">
@@ -558,12 +256,9 @@
                             <div class="details"><fmt:formatDate value="${news.publishTime}"
                                                                  pattern="yyyy-MM-dd HH:mm:ss"/></div>
                             <img src="${news.imageUrl}" class="left" alt="A chinese dragon"
-                                 style="width: 30%;height: 30%"/>
-                            <div id="centent" onclick="javascript:myfun();">
-                                    <%--<--p class="centent">--%>
-                                    <%--${news.centent}--%>
-                                    <%--<--/p>--%>
-                            </div>
+                                 style="width: 50%;height: 50%"/>
+                            <%--<div id="centent" onclick="javascript:myfun();">--%>
+                            <%--</div>--%>
                             <ul class="controls">
                                 <li><a href="http://www.autohome.com.cn" class="printerfriendly">来源:${news.source}</a>
                                 </li>
@@ -576,8 +271,15 @@
                     </div>
                     <div class="divider2"></div>
                 </c:forEach>
+                     <div class="post" id="insert">
+
+                    </div>
+                    <%--<div id="insert"></div>--%>
             </div>
         <%--</div>--%>
+        <div class="more">
+            <div class="more_btn" at=1>点击加载更多</div>
+        </div>
 
 
     </div>
@@ -587,7 +289,61 @@
     </div>
 
 </div>
-<script type="application/javascript" src="<%=basePath%>js/bootstrap.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/jquery.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/scrollTop.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/layer.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $(".more_btn").click(function(){
+        at=$(this).attr('at');
+        obj=this;
+        if(at!=0){
+            at = parseInt(at,10)+1;
+            $(obj).attr('at',at);
+           // $(".more .more_btn").addClass('moreClass').html('正在加载');
+            $.ajax({
+                cache: true,
+                type: "GET",
+                url:"<%=basePath%>search/more/" + at,
+                async: true,
+                error:function(){
+                    layer.msg('加载失败', {icon:2});
+                },
+                success: function(data){
+                    if(data.result!=''){
+                        layer.msg("加载成功！",{icon:1});
+                        var json = data.result;
+                       // $(".more .more_btn").removeClass('moreClass').html('点击加载更多');
+                        alert(json.length);
+
+                       for (var p=0;p<json.length;p++){
+//                        alert(p);
+
+//                       }
+//                        for(var p in json){//遍历json数组时，这么写p为索引，0,1
+
+                           // alert(json[p].source + " " + json[p].title);
+//                           var temp = "insert" + p;
+                           var insert = document.getElementById("insert");
+                            var aText = '<div class="divider2"></div><a href="${pageContext.request.contextPath}/news/detail/'+
+                            json[p].id + '"><h2>'+
+                            json[p].title+'</h2></a><div class="contentarea">'+'<div class="details">'+
+                            '<'+'fmt:formatDate'+' value="'+
+                            json[p].publishTime +'" '+ ' pattern="yyyy-MM-dd HH:mm:ss"/>'+'</div><img src="'+
+                            json[p].imageUrl + '" class="left" alt="A chinese dragon" style="width: 50%;height: 50%"/><ul class="controls"><li><a href="#" class="printerfriendly">来源:'+
+                            json[p].source+'</a></li><li><a href="#" class="comments" alt="作者">作者:'+
+                            json[p].authorName +'</a></li><li><a href="#" class="more">阅读量: <%=(int) (Math.random() * 10000)%></a></li></ul></div>';
+                            //insert.append(aText);
+                            insert.innerHTML = insert.innerHTML + aText;
+                        }
+
+                    }
+
+                }
+            });
+        }
+    })
+</script>
 <script>
     //获取元素
     var imgLis = document.getElementById('img').getElementsByTagName('li');
