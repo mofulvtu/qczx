@@ -11,25 +11,25 @@ import java.util.List;
 public class CarPropertys {
     private List<CarColor> CarColorList ;
 
-    private String Engine_CompressRat;
+    private String Engine_CompressRat;//压缩比
 
-    private String Engine_CylinderNum;
+    private String Engine_CylinderNum;//气缸数(个)
 
-    private String Engine_Exhaust;
+    private String Engine_Exhaust;//排量(mL)
 
-    private String Engine_InhaleType;
+    private String Engine_InhaleType;//进气形式
 
-    private String Engine_Location;
+    private String Engine_Location;//发动机位置
 
-    private String Engine_MaxNJ;
+    private String Engine_MaxNJ;//最大扭矩(Nm)
 
-    private String Engine_MaxPower;
+    private String Engine_MaxPower;//最大功率(kW)
 
-    private String Engine_PowerSpeed;
+    private String Engine_PowerSpeed;//最大功率转速(rpm)
 
-    private String Engine_Type;
+    private String Engine_Type;//发动机型号
 
-    private String Engine_ValvePerCylinder;
+    private String Engine_ValvePerCylinder;//每缸气门数(个)
 
     private String InStat_AirCSystem;
 

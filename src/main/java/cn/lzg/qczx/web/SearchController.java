@@ -52,7 +52,7 @@ public class SearchController {
             model.addAttribute("newsList", list);
         return "searchList";
         }else {
-            return  "";
+            return  "searchList";
         }
 
     }

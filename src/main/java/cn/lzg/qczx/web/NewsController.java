@@ -36,7 +36,9 @@ public class NewsController {
 		if(tag==1){
 			crawledStyle = "%商情";
 			List<News> list = newsService.getList(crawledStyle);
+			List<News> carouselList = newsService.getCarousel();
 			model.addAttribute("newsList", list);
+			model.addAttribute("carouselList",carouselList);
 			return "list";
 		}else if(tag==2){
 			crawledStyle = "%行情";

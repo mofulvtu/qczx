@@ -365,7 +365,7 @@
             position: relative;
             line-height: 1.4em;
             /* 3 times the line-height to show 3 lines */
-            height: 4.2em;
+            /*height: 4.2em;*/
             overflow: hidden;
         }
     </style>
@@ -397,8 +397,8 @@
         <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
         <ul>
             <li><a href="<%=basePath%>news/list/1">首页</a></li>
-            <li><a href="<%=basePath%>news/list/2">新车</a></li>
-            <li><a href="<%=basePath%>news/list/3" class="active">导购</a></li>
+            <li><a href="<%=basePath%>news/list/2">行情</a></li>
+            <li><a href="<%=basePath%>news/list/3" class="active">促销</a></li>
             <li><a href="<%=basePath %>video/list">视频</a></li>
             <li><a href="http://www.865171.cn">选车</a></li>
             <li><a href="http://localhost:8080">论坛</a></li>

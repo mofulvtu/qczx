@@ -176,8 +176,8 @@
     <div id="menu">
         <ul>
             <li><a href="<%=basePath%>news/list/1" >首页</a></li>
-            <li><a href="<%=basePath%>news/list/2">新车</a></li>
-            <li><a href="<%=basePath%>news/list/3">导购</a></li>
+            <li><a href="<%=basePath%>news/list/2">行情</a></li>
+            <li><a href="<%=basePath%>news/list/3">促销</a></li>
             <li><a href="<%=basePath%>video/list">视频</a></li>
             <li><a href="<%=basePath%>cars/list/1" class="active">选车</a></li>
             <li><a href="http://localhost:8080">论坛</a></li>
@@ -217,12 +217,12 @@
 
             <c:forEach var="subBrand" items="${subBrandList}">
                 <div class="item">
-                    <div class="item1">${subBrand.brandName}</div>
+                    <div class="item1"><h3>${subBrand.brandName}</h3></div>
                     <c:forEach var="serial" items="${subBrand.serialList}">
                         <div class="item2">
                             <c:set var="picture" value="${serial.picture}"/>
                             <div class="pic"><img src="${fn:replace(picture,'{0}', '2')}" class="image">
-                                <div><a href="<%=basePath%>cars/style/${serial.serialId}">${serial.serialName}</a></div>
+                                <div><a href="<%=basePath%>cars/style/${serial.serialId}" style="color: #00c7c7">${serial.serialName}</a></div>
                                 <div>${serial.dealerPrice}</div>
                             </div>
                         </div>

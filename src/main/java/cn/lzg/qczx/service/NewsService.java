@@ -33,6 +33,11 @@ public interface NewsService {
 	 */
 	List<News> queryByKeyWords(String keyWords);
 
+	/**
+	 * 获取最新轮播图
+	 * @return List<News>
+	 */
+	List<News> getCarousel();
 
 
 

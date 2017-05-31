@@ -388,8 +388,8 @@
     <div id="menu">
         <ul>
             <li><a href="<%=basePath%>news/list/1">首页</a></li>
-            <li><a href="<%=basePath%>news/list/2">新车</a></li>
-            <li><a href="<%=basePath%>news/list/3">导购</a></li>
+            <li><a href="<%=basePath%>news/list/2">行情</a></li>
+            <li><a href="<%=basePath%>news/list/3">促销</a></li>
             <li><a href="<%=basePath%>video/list" class="active">视频</a></li>
             <li><a href="<%=basePath%>cars/list/2">选车</a></li>
             <li><a href="http://localhost:8080">论坛</a></li>

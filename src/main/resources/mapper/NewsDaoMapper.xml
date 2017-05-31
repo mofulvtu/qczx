@@ -57,6 +57,25 @@
         limit #{offset},#{limit}
     </select>
 
+    <select id="queryCarousel" resultType="News" >
+        select
+        id,
+        title,
+        author_name,
+        centent,
+        image_url,
+        publish_time,
+        source
+        from
+        qctt_news_grab
+        WHERE
+        id in
+	    ( SELECT
+	    news_id FROM qctt_news_grab_extend WHERE crawled_style LIKE #{crawledStyle})
+        order by
+        publish_time desc
+        limit #{offset},#{limit}
+    </select>
 
     <select id="queryByKeyWords" resultType="News" >
         select
@@ -75,6 +94,5 @@
         publish_time desc
         limit #{offset},#{limit}
     </select>
-    
    
 </mapper>

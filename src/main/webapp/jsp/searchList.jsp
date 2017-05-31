@@ -404,12 +404,11 @@
     <div id="menu">
         <ul>
             <li><a href="<%=basePath%>news/list/1">首页</a></li>
-            <li><a href="<%=basePath%>news/list/2">新车</a></li>
-            <li><a href="<%=basePath%>news/list/3">导购</a></li>
+            <li><a href="<%=basePath%>news/list/2">行情</a></li>
+            <li><a href="<%=basePath%>news/list/3">促销</a></li>
             <li><a href="<%=basePath%>video/list">视频</a></li>
             <li><a href="http://www.865171.cn">选车</a></li>
             <li><a href="http://localhost:8080">论坛</a></li>
-            <li><a href="<%=basePath%>video/list">搜索</a></li>
         </ul>
     </div>
     <div id="menubottom"></div>
@@ -450,9 +449,14 @@
 
                 </div>
             </div>
+            <c:if test="${!empty newsList}">
             <div class="more">
                 <div class="more_btn" at=1>点击加载更多</div>
             </div>
+            </c:if>
+            <c:if test="${empty newsList}">
+                <h1>无数据</h1>
+            </c:if>
         </div>
 
         <div id="secondarycontent">

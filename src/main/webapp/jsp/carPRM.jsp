@@ -27,40 +27,47 @@
           href="<%=basePath%>css/videoList3.css">
     <link rel="stylesheet" type="text/css"
           href="<%=basePath%>css/car.css">
+    <link rel="stylesheet" type="text/css"
+          href="<%=basePath%>css/bootstrap.css">
 
-<style type="text/css">
-    .item .pic {
-        float: left;
-        margin-right: 10px;
-        width: 100px;
-        height: 100px;
-    }
+    <style type="text/css">
+        .item .pic {
+            float: left;
+            margin-right: 10px;
+            width: 100px;
+            height: 100px;
+        }
 
-    .item .content {
-        float: left;
-        width: 500px;
-    }
-    .list-table th:first-child {
-        padding-left: 10px;
-    }
-    .list-table .first-item {
-        color: #333;
-        font-weight: bold;
-    }
-    .list-table th {
-        border-bottom: 1px solid #E9E9E9;
-        color: #999;
-        height: 40px;
-        line-height: 40px;
-        background: #f7f7f7;
-        font-weight: normal;
-        text-align: left;
-    }
-    td, th {
-        padding: 0;
-        font-weight: normal;
-    }
-</style>
+        .item .content {
+            float: left;
+            width: 500px;
+        }
+
+        .list-table th:first-child {
+            padding-left: 10px;
+        }
+
+        .list-table .first-item {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .list-table th {
+            border-bottom: 1px solid #E9E9E9;
+            color: #999;
+            height: 40px;
+            line-height: 40px;
+            background: #f7f7f7;
+            font-weight: normal;
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+            font-weight: normal;
+        }
+        .colorList td:hover,a:hover{color: #f43317}
+    </style>
 </head>
 
 <body>
@@ -80,9 +87,9 @@
     </form>
     <div id="menu">
         <ul>
-            <li><a href="<%=basePath%>news/list/1" >首页</a></li>
-            <li><a href="<%=basePath%>news/list/2">新车</a></li>
-            <li><a href="<%=basePath%>news/list/3">导购</a></li>
+            <li><a href="<%=basePath%>news/list/1">首页</a></li>
+            <li><a href="<%=basePath%>news/list/2">行情</a></li>
+            <li><a href="<%=basePath%>news/list/3">促销</a></li>
             <li><a href="<%=basePath%>video/list">视频</a></li>
             <li><a href="<%=basePath%>cars/list/1" class="active">选车</a></li>
             <li><a href="http://localhost:8080">论坛</a></li>
@@ -95,50 +102,44 @@
             <div class="divider2"></div>
             <div class="post">
                 <div class="contentarea">
-                    <%--<h3>${carPRMs}</h3>--%>
                     <div class="details" style="color: #3cb0fa">
-                        <%--<h1 class="brandName">${brandsIntro.masterName}</h1>--%>
-                        <span >参数配置</span>
+                        <span>车款</span>
                     </div>
-                    <%--<c:forEach var="carCRM" items="${carPRMs}">--%>
-                        <%--&lt;%&ndash;${carCRM}<br>&ndash;%&gt;--%>
-                        <%--${carCRM.carGroup.name}<br>--%>
-                        <%--<c:forEach var="carStyle" items="${carCRM.carGroup.carList}">--%>
-                            <%--${carStyle.name}+++${carStyle.referPrice}+++${carStyle.carId}+++${carStyle.trans}+++${carStyle.year}<br>--%>
-                        <%--</c:forEach>--%>
-                    <%--</c:forEach>--%>
                     <br>
-
-
-
-                        <c:forEach var="carCRM" items="${carPRMs}">
-                            <c:if test="${carCRM.carGroup.carList!=null && fn:length(carCRM.carGroup.carList) > 0}">
-                        <table border="1px">
-                            <tr>
-                                    <td>
-                                    ${carCRM.carGroup.name}
+                    <c:forEach var="carCRM" items="${carPRMs}">
+                        <c:if test="${carCRM.carGroup.carList!=null && fn:length(carCRM.carGroup.carList) > 0}">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr style="background-color: #abc7c4;font-weight: 500">
+                                    <td width="40%">
+                                            ${carCRM.carGroup.name}
                                     </td>
-                                    <td>
+                                    <td width="30%">
                                         变速箱
                                     </td>
-                                    <td>
+                                    <td width="15%">
                                         指导价
                                     </td>
-                                    <td>
+                                    <td width="15%">
                                         参考最低价
                                     </td>
-                            </tr>
+                                </tr>
+                                </thead>
+                                <tbody>
                                 <c:forEach var="carStyle" items="${carCRM.carGroup.carList}">
-                            <tr>
-                                <td><a href="<%=basePath%>cars/carPropertys/${carStyle.carId}">${carStyle.year}款 ${carStyle.name}</a> </td>
-                                <td>${carStyle.trans}</td>
-                                <td>${carStyle.referPrice}</td>
-                                <td>${carStyle.minPrice}</td>
-                            </tr>
+                                    <tr class="colorList">
+                                        <td>
+                                            <a href="<%=basePath%>cars/carPropertys/${carStyle.carId}">${carStyle.year}款 ${carStyle.name}</a>
+                                        </td>
+                                        <td>${carStyle.trans}</td>
+                                        <td>${carStyle.referPrice}</td>
+                                        <td>${carStyle.minPrice}</td>
+                                    </tr>
                                 </c:forEach>
-                        </table>
-                            </c:if>
-                        </c:forEach>
+                                </tbody>
+                            </table>
+                        </c:if>
+                    </c:forEach>
 
                     <div class="brandIntroduce" style="display: none">
                         <%--<p style="font-size: 15px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${brandsIntro.logoMeaning}</p>--%>
@@ -177,6 +178,7 @@
 
 </div>
 <script type="text/javascript" src="<%=basePath %>js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="<%=basePath %>js/bootstrap.min.js"></script>
 <script type="text/javascript">
     $(".brandDtail").click(function () {
         var disp = $(".brandIntroduce").css("display");

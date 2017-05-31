@@ -26,37 +26,6 @@
           href="<%=basePath%>css/videoList3.css">
 
     <style type="text/css">
-        .footer div {
-            padding-top: 30px;
-            text-align: center;
-        }
-
-        .footer div a {
-            color: #666;
-            font-size: 14px;
-        }
-
-        .footer div small {
-            color: #eee;
-            width: 20px;
-            text-align: center;
-            margin: 0 25px;
-        }
-
-        .footer .copyright {
-            color: #666;
-            padding-bottom: 10px;
-        }
-
-        p {
-            position: relative;
-            line-height: 1.4em;
-            /* 3 times the line-height to show 3 lines */
-            height: 4.2em;
-            overflow: hidden;
-        }
-    </style>
-    <style type="text/css">
         <!--
         BODY {
             PADDING-BOTTOM: 0px;
@@ -122,22 +91,6 @@
             PADDING-TOP: 0px
         }
 
-        /*H1 {*/
-        /*PADDING-BOTTOM: 0px;*/
-        /*MARGIN: 0px;*/
-        /*PADDING-LEFT: 0px;*/
-        /*PADDING-RIGHT: 0px;*/
-        /*PADDING-TOP: 0px*/
-        /*}*/
-
-        /*H2 {*/
-        /*PADDING-BOTTOM: 0px;*/
-        /*MARGIN: 0px;*/
-        /*PADDING-LEFT: 0px;*/
-        /*PADDING-RIGHT: 0px;*/
-        /*PADDING-TOP: 0px*/
-        /*}*/
-
         P {
             PADDING-BOTTOM: 0px;
             MARGIN: 0px;
@@ -149,15 +102,6 @@
         LI {
             LIST-STYLE-TYPE: none;
             LIST-STYLE-IMAGE: none
-        }
-
-        /*H2 {*/
-        /*FONT-SIZE: 100%*/
-        /*}*/
-
-        #change-city {
-            width: 1000px;
-            margin: 50px auto;
         }
 
         #change-city .choosecities {
@@ -315,31 +259,6 @@
             FONT-WEIGHT: bold
         }
 
-        #bdw {
-            MIN-HEIGHT: 500px
-        }
-
-        .cf {
-            ZOOM: 1
-        }
-
-        .cf:after {
-            DISPLAY: block;
-            HEIGHT: 0px;
-            VISIBILITY: hidden;
-            CLEAR: both;
-            OVERFLOW: hidden;
-            CONTENT: ''
-        }
-
-        /*H2 {*/
-        /*PADDING-BOTTOM: 0px;*/
-        /*MARGIN: 0px;*/
-        /*PADDING-LEFT: 0px;*/
-        /*PADDING-RIGHT: 0px;*/
-        /*PADDING-TOP: 0px*/
-        /*}*/
-
         BODY {
             FONT: 14px/1.5 Tahoma, Helvetica, arial, sans-serif;
             /*BACKGROUND: #d6e9ec;*/
@@ -398,8 +317,8 @@
             overflow: hidden;
         }
     </style>
-
 </head>
+
 <body>
 <div id="upbg"></div>
 <div id="outer">
@@ -415,27 +334,30 @@
             <input type="submit" class="submit" value="Search"/>
         </div>
     </form>
-    <%--<div id="headerpic"></div>--%>
+    <%--
+        <div id="headerpic"></div>
+    --%>
     <div id="menu">
         <ul>
             <li><a href="<%=basePath%>news/list/1">首页</a></li>
-            <li><a href="<%=basePath%>news/list/2">行情</a></li>
-            <li><a href="<%=basePath%>news/list/3" class="active">促销</a></li>
+            <li><a href="<%=basePath%>news/list/2" class="active">行情</a></li>
+            <li><a href="<%=basePath%>news/list/3">促销</a></li>
             <li><a href="<%=basePath%>video/list">视频</a></li>
-            <li><a href="http://www.865171.cn">选车</a></li>
+            <li><a href="<%=basePath%>cars/list/2">选车</a></li>
             <li><a href="http://localhost:8080">论坛</a></li>
         </ul>
     </div>
     <div id="menubottom"></div>
-    <div id="content">
 
+
+    <div id="content">
         <div class="back" id="back" style="display: block;"></div>
 
         <div id="primarycontainer">
             <div id="primarycontent">
                 <c:forEach var="news" items="${newsList}">
                     <div class="post">
-                        <a href="${pageContext.request.contextPath}/news/sale/${news.id}"><h2>${news.title}</h2></a>
+                        <a href="${pageContext.request.contextPath}/news/newCar/${news.id}"><h2>${news.title}</h2></a>
                         <div class="contentarea">
                             <div class="details"><fmt:formatDate value="${news.publishTime}"
                                                                  pattern="yyyy-MM-dd HH:mm:ss"/></div>
@@ -461,11 +383,9 @@
                 <div class="post" id="insert">
                 </div>
             </div>
-
             <div class="more">
                 <div class="more_btn" at=1>点击加载更多</div>
             </div>
-
         </div>
 
         <div id="secondarycontent">
@@ -502,7 +422,7 @@
     </div>
 
 </div>
-<script type="text/javascript" src="<%=basePath %>js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="<%=basePath%>js/scrollTop.js"></script>
 <script type="text/javascript" src="<%=basePath%>js/layer.js" charset="utf-8"></script>
 <script type="text/javascript">

@@ -42,4 +42,9 @@ public class NewsServiceImpl implements NewsService {
         }
     }
 
+    @Override
+    public List<News> getCarousel() {
+        return newsDao.queryCarousel("%降价",0,4);
+    }
+
 }

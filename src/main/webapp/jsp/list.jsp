@@ -24,7 +24,8 @@
 
     <link rel="stylesheet" type="text/css"
           href="<%=basePath%>css/videoList3.css">
-
+    <%--<link rel="stylesheet" type="text/css"--%>
+          <%--href="<%=basePath%>css/lunbo.css">--%>
 
     <style type="text/css">
         .footer div {
@@ -200,10 +201,22 @@
             <div id="left">
                 <div id="ppt">
                     <ul id="img">
-                        <li class="on"><img src="<%=basePath%>images/sikeda.jpg" style="width: 580px;height: 320px;"></li>
-                        <li><img src="<%=basePath%>images/dazhong.jpg" style="width: 580px;height: 320px;"></li>
-                        <li><img src="<%=basePath%>images/benchi.jpg" style="width: 580px;height: 320px;"></li>
-                        <li><img src="<%=basePath%>images/biaozhi.jpg" style="width: 580px;height: 320px;"></li>
+                        <%--<li class="on"><img src="<%=basePath%>images/sikeda.jpg" style="width: 580px;height: 320px;"></li>--%>
+                        <%--<li><img src="<%=basePath%>images/dazhong.jpg" style="width: 580px;height: 320px;"></li>--%>
+                        <%--<li><img src="<%=basePath%>images/benchi.jpg" style="width: 580px;height: 320px;"></li>--%>
+                        <%--<li><img src="<%=basePath%>images/biaozhi.jpg" style="width: 580px;height: 320px;"></li>--%>
+                            <c:forEach var="news2" items="${carouselList}">
+
+
+                            <li><a href="<%=basePath%>news/detail/${news2.id}"> <img src="${news2.imageUrl}" style="width: 580px;height: 320px;"></a>
+                                <h3 class="oP">
+                                    <a href="/news/172980" target="_blank" style="color:#FFF;text-decoration:none;">又是&ldquo;专属90后&rdquo;的设计！风神AX4靠啥出头？</a>
+                                </h3>
+                            </li>
+                            </c:forEach>
+                            <%--<li><img src="<%=basePath%>images/dazhong.jpg" style="width: 580px;height: 320px;"></li>--%>
+                            <%--<li><img src="<%=basePath%>images/benchi.jpg" style="width: 580px;height: 320px;"></li>--%>
+                            <%--<li><img src="<%=basePath%>images/biaozhi.jpg" style="width: 580px;height: 320px;"></li>--%>
                     </ul>
                     <ul id="order">
                         <li class="on"></li>

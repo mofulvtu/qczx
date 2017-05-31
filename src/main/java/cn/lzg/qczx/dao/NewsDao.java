@@ -37,4 +37,11 @@ public interface NewsDao {
      */
 	List<News> queryByKeyWords(@Param("keyWords") String keyWords,@Param("offset") int offset, @Param("limit") int limit);
 
+
+	/**
+	 * 轮播图获取
+	 * @return List<News>
+	 */
+	List<News> queryCarousel(@Param("crawledStyle")String crawledStyle,@Param("offset") int offset, @Param("limit") int limit);
+
 }
